@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veliko i malo slovo</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+ <h2>Veliko I malo slovo</h2>
+
+<label for="standard-select">Odaberite vaš tip teksta: </label>
+        <div class="select">
+        <select id="standard-select">
+         <option value="ime_osobe">Ime osobe</option>
+         <option value="ime_mjesta">Ime mjesta</option>
+         <option value="ime_blagdana">Ime blagdana</option>
+         <option value="ime_zupanija">Ime županija</option>
+         <option value="ime_povjesnih_dogadaja">Ime povjesnih događaja</option>
+         <option value="ime_povjesnih_dogadaja_bezvremena">Ime povjesnih događaja bez vremenskog određenja</option>
+  </select> <span class="focus"></span> <br><br>
+
+  <textarea id="textIn" placeholder="Napišite ovdje!"  name="textInput"></textarea>
+
+  <textarea placeholder="" id="textOutput" name="textOut" readonly></textarea> <br>
+
+   <button id="buttonSend">Pošalji robotu!</button>
+   <div class="buttons"><button class="btn-green" id="buttonRf" onclick='refresh()'><img class="icon" src="https://htmlacademy.ru/assets/icons/reload-6x-white.png"></button>
+</div>
+<script src="https://kit.fontawesome.com/75658ededa.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
